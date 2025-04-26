@@ -15,7 +15,8 @@ body {
     max-width: 1280px;
     margin: 0 auto;
 }
-.Montez{
+
+.Montez {
     font-family: "Montez", cursive;
 }
 
@@ -33,15 +34,8 @@ body {
 }
 
 .banner-parent {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: relative;
     top: 150px;
-}
-
-.banner-content {
-    width: 50%;
 }
 
 .banner-content h2 {
@@ -59,95 +53,91 @@ body {
 
 .banner-btn1 {
     font-size: 20px;
-    padding: 15px 30px;
+    padding: 15px 35px;
     position: relative;
+    border: none;
     background-color: #E40505;
-    color: white;
     border-radius: 30px;
     margin-right: 20px;
-    z-index: 2;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .btn a {
     text-decoration: none;
     color: white;
-    z-index: 2;
+
 }
 
 .banner-btn1::after {
     content: "";
-    animation: move1 1s normal ease-in-out;
-    display: none;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
-    z-index: 1;
-    font-size: 40px;
+    width: 0;
+    background: #113D48;
     border-radius: 30px;
+    z-index: 1;
+    transition: width 0.5s ease-in-out;
+    opacity: 1;
+    /* Always rendered */
 }
 
 .banner-btn1:hover::after {
-    display: block;
+    width: 100%;
 }
 
-@keyframes move1 {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 100%;
-        background: #113D48;
-    }
+.banner-btn1:hover a {
+    position: relative;
+    z-index: 6;
+    display: inline;
 
 }
 
 .banner-btn2 {
-    font-size: 20px;
-    padding: 15px 30px;
-    position: relative;
     background: transparent;
     border: 1px solid white;
+    font-size: 20px;
+    padding: 15px 35px;
+    position: relative;
     border-radius: 30px;
-    margin-right: 20px;
-    z-index: 2;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .banner-btn2::after {
     content: "";
-    animation: move2 1s normal ease-in-out;
-    display: none;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
-    z-index: 1;
-    font-size: 40px;
+    width: 0;
+    background: #ffffff;
     border-radius: 30px;
+    z-index: 1;
+    transition: width 0.5s ease-in-out;
+    opacity: 1;
+    /* Always rendered */
 }
 
 .banner-btn2:hover::after {
-    display: block;
+    width: 100%;
 }
 
-@keyframes move2 {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 100%;
-        background-color: #ffffff;
-    }
+.banner-btn2:hover a {
+    color: black;
+    position: relative;
+    z-index: 6;
+    display: inline;
 
 }
+
 
 .banner-arrow {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 12px;
 }
@@ -155,7 +145,7 @@ body {
 .arrow-1 {
     width: 60px;
     height: 60px;
-    background: rgba(255, 255, 255, 0.108);
+    background: rgba(255, 255, 255, 0.211);
     backdrop-filter: blur(3px);
     border-radius: 50%;
     display: flex;
@@ -185,10 +175,11 @@ body {
 /* cta section started */
 .cta {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
     margin: 20px auto;
     border-radius: 20px;
-    box-shadow: 3px -3px 10px rgb(240, 240, 240);
+    box-shadow: 3px 5px 10px rgb(240, 240, 240);
     background-color: white;
     position: relative;
     top: -150px;
@@ -200,10 +191,7 @@ body {
 }
 
 #data1 {
-    display: flex;
-    flex-wrap: wrap;
     font-family: Arial, Helvetica, sans-serif;
-    gap: 15px;
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 16px;
@@ -215,9 +203,6 @@ span {
     font-size: 20px;
 }
 
-.space {
-    width: calc(25% - 12px);
-}
 
 #data1 .space input {
     width: 100%;
@@ -242,7 +227,8 @@ span {
 }
 
 #data1 button {
-    padding: 12px 68px;
+    width: 100%;
+    padding: 12px 30px;
     font-size: 16px;
     font-weight: 500;
     border: none;
@@ -250,6 +236,10 @@ span {
     background-color: rgb(0, 0, 0);
     color: rgb(0, 0, 0);
     margin-top: 28px;
+}
+
+#data1 button:hover {
+    background: #E40505;
 }
 
 #data1 button a {
@@ -297,36 +287,96 @@ span {
     color: rgb(0, 0, 0);
 }
 
+#Part2 button:hover {
+    background-color: black;
+}
+
 #Part2 button a {
     text-decoration: none;
     color: black;
 }
 
+#Part2 button:hover a {
+    color: white;
+}
+
+#Part2 button:hover i {
+    color: white;
+}
+
+
 /* cta section ended */
 
-/* together sectio css started */
-.together-info1-logo{
+/* lets go section start */
+.together-info1-logo {
     transition: 1s;
-    background-color:#E40505;
+    background-color: #E40505;
 }
-.together-info1-logo:hover{
+
+.together-info1-logo:hover {
     transform: rotatey(180deg);
-    background-color:#113D48;
+    background-color: #113D48;
 }
-.together-info1-detail p{
+
+.together-info1-detail p {
     font-size: 17px;
 }
-.together-btn{
+
+.together-btn {
     border: 1px solid black;
 }
-.together-btn a{
+
+.together-btn a {
     color: black;
 }
-.together-btn:hover{
+
+.together-btn:hover {
     border: 1px solid #E40505;
-    background-color:#E40505;
+    background-color: #E40505;
 }
-.together-btn:hover a{
+
+.together-btn:hover a {
     color: #ffffff;
 }
-/* together sectio css ended */
+
+/* lets go section ended */
+
+@media screen and (max-width:767px) {
+
+    .cta {
+        flex-direction: column;
+    }
+
+    .cta #Part1 {
+        width: 100%;
+    }
+
+    #data1 button {
+        width: 60%;
+    }
+
+    .chat-btn {
+        text-align: center;
+    }
+
+    .cta #Part2 {
+        width: 100%;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .banner-arrow {
+        display: none;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+
+    .banner-content h1 {
+        font-size: 50px;
+    }
+
+    .herobanner {
+        height: 600px;
+    }
+}
