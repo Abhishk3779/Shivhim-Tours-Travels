@@ -12,3 +12,10 @@ html,body{
     max-width: 1280px;
     margin: 0 auto;
 }
+.abt-banner{
+    background: url("img/about-banner.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
