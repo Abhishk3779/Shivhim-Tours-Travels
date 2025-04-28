@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -13,9 +17,21 @@ html,body{
     margin: 0 auto;
 }
 .abt-banner{
-    background: url("img/about-banner.webp");
-    background-position: center;
+    background-image: url("../img/about-banner.webp");
+    background-position:top center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 400px;
+    margin-top:100px ;
+}
+.abt-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.abt-head h1{
+    font-size: 55px;
+    color: white;
+    font-family: "Manrope", sans-serif;
 }
