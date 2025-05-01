@@ -9,10 +9,12 @@ body {
     height: 100%;
     width: 100%;
 }
-body{
+
+body {
     overflow: visible;
     position: relative;
 }
+
 .container {
     width: 100%;
     max-width: 1280px;
@@ -26,40 +28,47 @@ body{
 .blue-clr {
     color: #113D48;
 }
+
 /* header section started */
-header{
+header {
     position: sticky;
     top: 0;
     z-index: 999;
     background-color: white;
     overflow: visible;
 }
-.hdr-part-1 a{
+
+.hdr-part-1 a {
     color: white;
     font-size: 14px;
 }
-.hdr-part-1-info p{
+
+.hdr-part-1-info p {
     color: white;
     font-size: 14px;
 }
-.hdr-support p{
+
+.hdr-support p {
     color: white;
     font-size: 14px;
 }
-.nav ul li a{
+
+.nav ul li a {
     color: black;
     font-weight: 400;
     font-size: 17px;
 }
-.nav ul li a:hover{
+
+.nav ul li a:hover {
     color: #ff0000;
-}   
-.hdr-btn button a{
-    color:#ffffff;
+}
+
+.hdr-btn button a {
+    color: #ffffff;
     font-size: 17px;
 }
 
-.hdr-btn button{
+.hdr-btn button {
     background: transparent;
     background-color: rgb(0, 0, 0);
     border: none;
@@ -97,7 +106,8 @@ header{
     display: inline;
 
 }
-.hdr-3{
+
+.hdr-3 {
     display: none;
 }
 
@@ -391,30 +401,35 @@ span {
 /* cta section ended */
 
 /* tours section started */
-.tour h3 a{
+.tour h3 a {
     font-size: 24px;
     margin-top: 8px;
     color: #113D48;
 }
-.tour h3 a:hover{
+
+.tour h3 a:hover {
     color: #E40505;
 }
-.tour-1{
+
+.tour-1 {
     overflow: hidden;
     width: 100%;
     height: 250px;
 }
-.tour-1-img{
+
+.tour-1-img {
     background-image: url("../shivhimtours/img/shivhimwinter.webp.bv_resized_desktop.webp.bv.webp");
     width: 100%;
     height: 100%;
     background-size: cover;
     transition: 1s;
 }
-.tour:hover .tour-1-img{
+
+.tour:hover .tour-1-img {
     transform: scale(1.5);
 }
-.tour-2-img{
+
+.tour-2-img {
     background-image: url("../shivhimtours/img/shivhimspritual.webp.bv_resized_desktop.webp.bv.webp");
     width: 100%;
     height: 250px;
@@ -422,10 +437,12 @@ span {
     overflow: hidden;
     transition: 1s;
 }
-.tour:hover .tour-2-img{
+
+.tour:hover .tour-2-img {
     transform: scale(1.5);
 }
-.tour-3-img{
+
+.tour-3-img {
     background-image: url("../shivhimtours/img/shivhim-himachal.webp.bv_resized_desktop.webp.bv.webp");
     width: 100%;
     height: 250px;
@@ -433,10 +450,12 @@ span {
     overflow: hidden;
     transition: 1s;
 }
-.tour:hover .tour-3-img{
+
+.tour:hover .tour-3-img {
     transform: scale(1.5);
 }
-.tour-4-img{
+
+.tour-4-img {
     background-image: url("../shivhimtours/img/shivhimuttrakhand.webp.bv_resized_desktop.webp.bv.webp");
     width: 100%;
     height: 250px;
@@ -444,10 +463,12 @@ span {
     overflow: hidden;
     transition: 1s;
 }
-.tour:hover .tour-4-img{
+
+.tour:hover .tour-4-img {
     transform: scale(1.5);
 }
-.tour-5-img{
+
+.tour-5-img {
     background-image: url("../shivhimtours/img/shivhimkasmir.webp.bv_resized_desktop.webp.bv.webp");
     width: 100%;
     height: 250px;
@@ -455,16 +476,19 @@ span {
     overflow: hidden;
     transition: 1s;
 }
-.tour:hover .tour-5-img{
+
+.tour:hover .tour-5-img {
     transform: scale(1.5);
 }
+
 /* tours section ended */
 
 /* destinations section started */
-.destinations{
+.destinations {
     position: relative;
 }
-.destination1{
+
+.destination1 {
     background-image: url("../shivhimtours/img/Manali-3.webp.bv_resized_desktop.webp.bv.webp");
     background-size: cover;
     background-position: center;
@@ -474,12 +498,13 @@ span {
     position: absolute;
     left: 0;
     top: 100px;
-     display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: end;
     filter: blur(5px);
 }
-.destination2{
+
+.destination2 {
     background-image: url("../shivhimtours/img/Dharamshala-2.webp.bv_resized_desktop.webp.bv.webp");
     background-size: cover;
     background-position: center;
@@ -489,12 +514,13 @@ span {
     position: absolute;
     left: 200px;
     top: 50px;
-        display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: end;
     filter: blur(3px);
 }
-.destination3{
+
+.destination3 {
     background-image: url("../shivhimtours/img/Spiti-Valley-2.webp.bv_resized_desktop.webp.bv.webp");
     background-size: cover;
     background-position: center;
@@ -506,7 +532,8 @@ span {
     align-items: end;
 
 }
-.destination4{
+
+.destination4 {
     background-image: url("../shivhimtours/img/srinagar-2.webp.bv_resized_desktop.webp.bv.webp");
     background-size: cover;
     background-position: center;
@@ -516,12 +543,13 @@ span {
     position: absolute;
     right: 200px;
     top: 50px;
-        display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: end;
     filter: blur(3px);
 }
-.destination5{
+
+.destination5 {
     background-image: url("../shivhimtours/img/kasol-1.webp.bv_resized_desktop.webp.bv.webp");
     background-size: cover;
     background-position: center;
@@ -531,11 +559,12 @@ span {
     position: absolute;
     right: 0;
     top: 100px;
-        display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: end;
     filter: blur(5px);
 }
+
 /* destinations section ended */
 
 /* lets go section start */
@@ -605,6 +634,7 @@ span {
     transform: scale(1.3);
     overflow: hidden;
 }
+
 .recommanded-place-img2 {
     height: 100%;
     background-image: url("../shivhimtours/img/Mask-group.svg");
@@ -617,6 +647,7 @@ span {
     transform: scale(1.3);
     overflow: hidden;
 }
+
 .recommanded-place-img3 {
     height: 100%;
     background-image: url("../shivhimtours/img/Frame-62.webp.bv_resized_desktop.webp.bv.webp");
@@ -629,6 +660,7 @@ span {
     transform: scale(1.3);
     overflow: hidden;
 }
+
 .recommanded-place-img4 {
     height: 100%;
     background-image: url("../shivhimtours/img/Essential-Travel-Tips-for-a-Hassle-Free-Trip-to-Shimla.webp.bv_resized_desktop.webp.bv\ \(1\).webp");
@@ -641,6 +673,7 @@ span {
     transform: scale(1.3);
     overflow: hidden;
 }
+
 .recommanded-place-img5 {
     height: 100%;
     background-image: url("../shivhimtours/img/Khajjiar-2.webp.bv_resized_desktop.webp.bv.webp");
@@ -654,6 +687,7 @@ span {
     transform: scale(1.3);
     overflow: hidden;
 }
+
 .recommanded-place-img6 {
     height: 100%;
     background-image: url("../shivhimtours/img/Breathtaking-Beauty-of-Kashmir.webp.bv_resized_desktop.webp.bv.webp");
@@ -666,21 +700,23 @@ span {
     transform: scale(1.3);
     overflow: hidden;
 }
-.like{
-position: absolute;
-top:10px;
-right: 10px;
-background-color: rgba(255, 255, 255, 0.668);
-border-radius: 50%;
-width: 40px;
-height: 40px;
-z-index: 4;
-display: flex;
-justify-content: center;
-align-items: center;
+
+.like {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.668);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.like:active i{
-    color:#E40505;
+
+.like:active i {
+    color: #E40505;
 }
 
 
@@ -935,11 +971,12 @@ align-items: center;
 /* numbersection ended */
 
 /* testimonial section started */
-.testimonial-1{
+.testimonial-1 {
     position: relative;
     background-color: #ebf5fd;
 }
-.testimonial-1>h2{
+
+.testimonial-1>h2 {
     position: relative;
     bottom: -48px;
     left: 41%;
@@ -952,40 +989,46 @@ align-items: center;
     font-weight: 400;
     font-size: 30px;
 }
-.testimonial-1>p{
+
+.testimonial-1>p {
     font-weight: 400;
     font-size: 18px;
 }
-.testimonial-1-a >h2{
+
+.testimonial-1-a>h2 {
     background-color: #E40505;
     bottom: -65px;
     left: 43%;
     color: white;
 }
+
 /* testimonial section ended */
 
 /* image row section started */
-.image-row-1{
+.image-row-1 {
     width: 100%;
 }
-.image-row-1 img{
-width: 9%;
+
+.image-row-1 img {
+    width: 9%;
 }
+
 /* image row section ended */
 
 /* Article section started */
-.article{
+.article {
     background-color: #ffe6e6;
 }
-.article-btn button a{
-    color:#113D48;
+
+.article-btn button a {
+    color: #113D48;
     font-size: 17px;
 }
 
-.article-btn button{
+.article-btn button {
     background: transparent;
     background-color: rgba(255, 255, 255, 0);
-    border: 1px solid  #113D48;
+    border: 1px solid #113D48;
     font-size: 20px;
     padding: 15px 35px;
     position: relative;
@@ -1020,14 +1063,15 @@ width: 9%;
     display: inline;
 
 }
-.article-img{
+
+.article-img {
     transition: 1s;
     width: 100%;
     height: 350px;
     overflow: hidden;
 }
 
-.article-img1{
+.article-img1 {
     background-image: url("../shivhimtours/img/Top-5-Must-Visit.webp.bv_resized_desktop.webp.bv.webp");
     background-size: cover;
     background-position: center;
@@ -1036,10 +1080,12 @@ width: 9%;
     height: 100%;
     transition: 1s;
 }
-.article-img:hover .article-img1{
+
+.article-img:hover .article-img1 {
     transform: scale(1.3);
 }
-.article-img2{
+
+.article-img2 {
     background-image: url("../shivhimtours/img/Essential-Travel-Tips-for-a-Hassle-Free-Trip-to-Shimla.webp.bv_resized_desktop.webp.bv.webp");
     overflow: hidden;
     width: 100%;
@@ -1048,10 +1094,12 @@ width: 9%;
     background-position: center;
     transition: 1s;
 }
-.article-img:hover .article-img2{
+
+.article-img:hover .article-img2 {
     transform: scale(1.3);
 }
-.article-img3{
+
+.article-img3 {
     background-image: url("../shivhimtours/img/Breathtaking-Beauty-of-Kashmir.webp.bv_resized_desktop.webp.bv.webp");
     overflow: hidden;
     width: 100%;
@@ -1060,10 +1108,12 @@ width: 9%;
     background-position: center;
     transition: 1s;
 }
-.article-img:hover .article-img3{
+
+.article-img:hover .article-img3 {
     transform: scale(1.3);
 }
-.article-img4{
+
+.article-img4 {
     background-image: url("../shivhimtours/img/Frame-62.webp.bv_resized_desktop.webp.bv.webp");
     overflow: hidden;
     width: 100%;
@@ -1072,19 +1122,24 @@ width: 9%;
     background-position: center;
     transition: 1s;
 }
-.article-img:hover .article-img4{
+
+.article-img:hover .article-img4 {
     transform: scale(1.3);
 }
-.card-body span{
+
+.card-body span {
     font-size: 14px;
 }
-.card-body span:hover a{
+
+.card-body span:hover a {
     color: #E40505;
 }
-.card-body h3{
+
+.card-body h3 {
     font-size: 24px;
 }
-.card-body h3:hover a{
+
+.card-body h3:hover a {
     color: #E40505;
 }
 
@@ -1093,29 +1148,34 @@ width: 9%;
 /* Article section ended */
 
 /* footer section css started */
-.ftr-social-media-icon a{
+.ftr-social-media-icon a {
     background-color: rgb(239, 245, 254);
-    color:#E40505;
+    color: #E40505;
     width: 35px;
     height: 35px;
     font-size: 18px;
 }
-.ftr-social-media-icon a:hover{
-    color:  rgb(239, 245, 254);
-    background-color:#E40505;
+
+.ftr-social-media-icon a:hover {
+    color: rgb(239, 245, 254);
+    background-color: #E40505;
 }
-.ftr-company-intro >p{
+
+.ftr-company-intro>p {
     font-size: 17px;
 }
-.Quick-Links ul li a{
+
+.Quick-Links ul li a {
     font-size: 18px;
     color: rgb(142, 141, 141);
     font-weight: 400;
 }
-.Quick-Links ul li:hover a{
+
+.Quick-Links ul li:hover a {
     color: red;
 }
-.get-in-touch i{
+
+.get-in-touch i {
     font-size: 20px;
     background-color: #e4f3fc;
     color: #5dc2fd;
@@ -1126,59 +1186,71 @@ width: 9%;
     width: 40px;
     height: 40px;
 }
-.get-in-touch a{
+
+.get-in-touch a {
     font-size: 18px;
     color: rgb(142, 141, 141);
     font-weight: 400
 }
-.get-in-touch a:hover{
+
+.get-in-touch a:hover {
     color: #E40505;
 }
-.instagram-post iframe{
+
+.instagram-post iframe {
     height: 200px;
 }
-.copyright{
+
+.copyright {
     font-size: 17px;
     font-weight: 600;
     background-color: #E40505;
     color: white;
 }
+
 /* footer section css ended */
 
 @media screen and (max-width:767px) {
-    .hdr-3{
+    .hdr-3 {
         display: block !important;
         display: flex !important;
         justify-content: space-between !important;
         padding: 10px 10px !important;
         align-items: center !important;
     }
-    .hdr-3 div img{
+
+    .hdr-3 div img {
         width: 50% !important;
     }
-    .hdr-part-2{
+
+    .hdr-part-2 {
         display: none !important;
     }
-    .hdr-part-1{
+
+    .hdr-part-1 {
         display: none !important;
     }
+
     .cta {
         flex-direction: column;
         top: 0;
     }
 
-    .bnr-btn{
+    .bnr-btn {
         gap: 15px;
     }
+
     .banner-btn1 {
         padding: 10px 20px;
         font-size: 18px;
     }
+
     .banner-btn2 {
         padding: 10px 20px;
         font-size: 18px;
     }
-    .btn{
+
+    .btn {
         margin: 0 auto;
     }
 
@@ -1198,6 +1270,7 @@ width: 9%;
         width: 100%;
         border-radius: 0px 0px 20px 20px;
     }
+
     .banner-parent {
         top: 80px;
     }
@@ -1221,78 +1294,91 @@ width: 9%;
     .recommanded-places p {
         width: 90%;
     }
+
     .mt-lg-6 {
         margin-top: 0px;
     }
-    
+
     .mb-lg-6 {
         margin-bottom: 0px;
     }
-    .tour-places{
+
+    .tour-places {
         flex-direction: column;
     }
-    .footer-part2 img{
+
+    .footer-part2 img {
         width: 100%;
     }
-    .destinations{
+
+    .destinations {
         flex-direction: column;
         gap: 20px;
     }
-    .destination1{
+
+    .destination1 {
         position: relative;
         width: 90%;
         left: 0;
         top: 0;
         filter: blur(0);
         height: 300px;
-        margin:0 auto;
+        margin: 0 auto;
     }
-    .destination2{
+
+    .destination2 {
         position: relative;
         width: 90%;
         left: 0;
         top: 0;
         filter: blur(0);
         height: 300px;
-        margin:0 auto;
+        margin: 0 auto;
     }
-    .destination3{
+
+    .destination3 {
         position: relative;
         width: 90%;
         left: 0;
         top: 0;
         filter: blur(0);
         height: 300px;
-        margin:0 auto;
+        margin: 0 auto;
     }
-    .destination4{
+
+    .destination4 {
         position: relative;
         width: 90%;
         left: 0;
         top: 0;
         filter: blur(0);
         height: 300px;
-        margin:0 auto;
+        margin: 0 auto;
     }
-    .destination5{
+
+    .destination5 {
         position: relative;
         width: 90%;
         left: 0;
         top: 0;
         filter: blur(0);
         height: 300px;
-        margin:0 auto;
+        margin: 0 auto;
     }
-    .image-row-1 img{
+
+    .image-row-1 img {
         width: 12%;
     }
-    .image-row-2{
+
+    .image-row-2 {
         display: none;
     }
-    .testimonial-parent{
+
+    .testimonial-parent {
         width: 100%;
     }
-    .testimonial-1{
+
+    .testimonial-1 {
         width: 100%;
         border: 1px solid red;
         margin-left: 25px !important;
