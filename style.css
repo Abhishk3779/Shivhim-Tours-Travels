@@ -460,6 +460,84 @@ span {
 }
 /* tours section ended */
 
+/* destinations section started */
+.destinations{
+    position: relative;
+}
+.destination1{
+    background-image: url("../shivhimtours/img/Manali-3.webp.bv_resized_desktop.webp.bv.webp");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 500px;
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    top: 100px;
+     display: flex;
+    justify-content: space-between;
+    align-items: end;
+    filter: blur(5px);
+}
+.destination2{
+    background-image: url("../shivhimtours/img/Dharamshala-2.webp.bv_resized_desktop.webp.bv.webp");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 500px;
+    z-index: 8;
+    position: absolute;
+    left: 200px;
+    top: 50px;
+        display: flex;
+    justify-content: space-between;
+    align-items: end;
+    filter: blur(3px);
+}
+.destination3{
+    background-image: url("../shivhimtours/img/Spiti-Valley-2.webp.bv_resized_desktop.webp.bv.webp");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 400px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+}
+.destination4{
+    background-image: url("../shivhimtours/img/srinagar-2.webp.bv_resized_desktop.webp.bv.webp");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 500px;
+    z-index: 6;
+    position: absolute;
+    right: 200px;
+    top: 50px;
+        display: flex;
+    justify-content: space-between;
+    align-items: end;
+    filter: blur(3px);
+}
+.destination5{
+    background-image: url("../shivhimtours/img/kasol-1.webp.bv_resized_desktop.webp.bv.webp");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 500px;
+    z-index: 5;
+    position: absolute;
+    right: 0;
+    top: 100px;
+        display: flex;
+    justify-content: space-between;
+    align-items: end;
+    filter: blur(5px);
+}
+/* destinations section ended */
+
 /* lets go section start */
 .together-info1-logo {
     transition: 1s;
@@ -856,6 +934,45 @@ align-items: center;
 
 /* numbersection ended */
 
+/* testimonial section started */
+.testimonial-1{
+    position: relative;
+    background-color: #ebf5fd;
+}
+.testimonial-1>h2{
+    position: relative;
+    bottom: -48px;
+    left: 41%;
+    text-align: center;
+    background-color: white;
+    color: #5dc2fd;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 15px;
+    font-weight: 400;
+    font-size: 30px;
+}
+.testimonial-1>p{
+    font-weight: 400;
+    font-size: 18px;
+}
+.testimonial-1-a >h2{
+    background-color: #E40505;
+    bottom: -65px;
+    left: 43%;
+    color: white;
+}
+/* testimonial section ended */
+
+/* image row section started */
+.image-row-1{
+    width: 100%;
+}
+.image-row-1 img{
+width: 9%;
+}
+/* image row section ended */
+
 /* Article section started */
 .article{
     background-color: #ffe6e6;
@@ -1116,5 +1233,68 @@ align-items: center;
     }
     .footer-part2 img{
         width: 100%;
+    }
+    .destinations{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .destination1{
+        position: relative;
+        width: 90%;
+        left: 0;
+        top: 0;
+        filter: blur(0);
+        height: 300px;
+        margin:0 auto;
+    }
+    .destination2{
+        position: relative;
+        width: 90%;
+        left: 0;
+        top: 0;
+        filter: blur(0);
+        height: 300px;
+        margin:0 auto;
+    }
+    .destination3{
+        position: relative;
+        width: 90%;
+        left: 0;
+        top: 0;
+        filter: blur(0);
+        height: 300px;
+        margin:0 auto;
+    }
+    .destination4{
+        position: relative;
+        width: 90%;
+        left: 0;
+        top: 0;
+        filter: blur(0);
+        height: 300px;
+        margin:0 auto;
+    }
+    .destination5{
+        position: relative;
+        width: 90%;
+        left: 0;
+        top: 0;
+        filter: blur(0);
+        height: 300px;
+        margin:0 auto;
+    }
+    .image-row-1 img{
+        width: 12%;
+    }
+    .image-row-2{
+        display: none;
+    }
+    .testimonial-parent{
+        width: 100%;
+    }
+    .testimonial-1{
+        width: 100%;
+        border: 1px solid red;
+        margin-left: 25px !important;
     }
 }
