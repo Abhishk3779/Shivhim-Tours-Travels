@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -11,4 +16,286 @@ html,body{
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
+}
+ 
+:root{
+    --font-color:#113D48;
+    --para-color:#8C8D8D;
+    --red-them-color:#D31319;
+    --bg-color-light:#E9F6F9;
+    --hover-orange:#F75D5D;
+    --duration-icon:#475467;
+}
+
+/* destination-banner section stared */
+.destination-banner{
+    background-image: url("../img/about-banner.webp");
+    background-position:top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-top:100px ;
+}
+.desti-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.desti-head h1{
+    font-size: 55px;
+    color: white;
+    font-family: "Manrope", sans-serif;
+}
+
+/* banner section ended */
+
+/* Explore section starts */
+.explore h4{
+    font-family: "Montez", cursive;
+    font-size: 40px; 
+    color:var(--font-color);
+    font-weight: 400;
+    text-align: center;
+    margin-top: 50px;
+}
+.explore h3{
+    font-family: "Manrope", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--font-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ex-img{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap:wrap;
+   
+}
+.ex-img-3{
+    border:0.1px solid rgb(201, 197, 197);
+    border-radius: 20px;
+    width: 32%;
+    position: relative;
+    height: 450px;
+    padding: 10px 10px;
+    margin-bottom: 50px;
+}
+.img-1{
+    border-radius: 10px;
+    height: 300px;
+    width: 95%;
+    margin: 0 auto;
+    background-image: url("../img/destin-1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -40px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.1s;
+}
+.img-1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/destin-1.webp");
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+.img-1:hover::before{
+    transform: scale(1.1);
+}
+
+
+.heart{
+    width: 50px;
+    height: 50px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: var(--bg-color-light);
+    color: var(--para-color);
+    z-index: 1;
+}
+.heart i{
+    font-size: 10px;
+}
+.heart:hover:active i{
+    color:var(--red-them-color)
+}
+.dest-loca{
+    position: absolute;
+    bottom: 20px;
+    width: 95%;
+    font-family:  "Manrope", sans-serif;
+}
+.first-p{
+    color: var(--duration-icon);
+    transition: 1s;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.first-p span:hover{
+    color: var(--hover-orange);
+}
+.dest-loca h5{
+    font-size: 22px;
+    padding: 15px 0 20px 0;
+}
+.time{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.clock i{
+    font-size:30px ;
+    color: var(--duration-icon);
+}
+.time-du p{
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--duration-icon);
+    margin-bottom: 5px;
+}
+.time-du span{
+    font-size: 15px;
+}
+.img-2{
+    border-radius: 10px;
+    height: 300px;
+    width: 95%;
+    margin: 0 auto;
+    background-image: url("../img/destin-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    position: absolute;
+    top: -40px;
+    overflow: hidden;
+}
+.img-2::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/destin-2.png");
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+.img-2:hover::before{
+    transform: scale(1.1);
+}
+.img-3{
+    border-radius: 10px;
+    height: 300px;
+    width: 95%;
+    margin: 0 auto;
+    background-image: url(../img/destin-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    position: absolute;
+    top: -40px;
+    overflow: hidden;
+}
+
+.img-3::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/destin-3.png");
+    background-size:cover;
+    background-position:center;
+    transition:0.5s;
+}
+.img-3:hover::before{
+    transform:scale(1.1);
+}
+/* Explore section ended */
+
+
+
+
+@media (max-width:481px) {
+    .container{
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .destination-banner{
+        background-image: url("../img/about-banner.webp");
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        margin-top:100px;
+    }
+    .desti-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+    }
+    .desti-head h1{
+        font-size: 30px;
+        color: white;
+        font-family: "Manrope", sans-serif;
+    }
+
+    .explore h4{
+        font-family: "Montez", cursive;
+        font-size: 25px; 
+        color:var(--font-color);
+        font-weight: 400;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .explore h3{
+        font-family: "Manrope", sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        color: var(--font-color);
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+
+    .ex-img{
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap:wrap;
+       padding: 0 10px;
+    }
+    .ex-img-3{
+        border:0.1px solid rgb(201, 197, 197);
+        border-radius: 20px;
+        width: 100%;
+        position: relative;
+        height: 450px;
+        padding: 10px 10px;
+        margin-bottom: 50px;
+    }
 }
