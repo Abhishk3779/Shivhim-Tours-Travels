@@ -1,0 +1,758 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "inter", sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+:root{
+    --font-color:#113D48;
+    --para-color:#8C8D8D;
+    --red-them-color:#D31319;
+    --bg-color-light:#E9F6F9;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    overflow: visible;
+}
+
+.hdr-part-1 a {
+    color: white;
+    font-size: 14px;
+}
+
+.hdr-part-1-info p {
+    color: white;
+    font-size: 14px;
+}
+
+.hdr-support p {
+    color: white;
+    font-size: 14px;
+}
+
+.nav ul li a {
+    color: black;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.nav ul li a:hover {
+    color: #ff0000;
+}
+
+.hdr-btn button a {
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.hdr-btn button {
+    background: transparent;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    font-size: 20px;
+    padding: 15px 35px;
+    position: relative;
+    border-radius: 30px;
+    /* overflow: hidden; */
+    z-index: 1;
+}
+
+.hdr-btn button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background: #ff0000;
+    border-radius: 30px;
+    z-index: 1;
+    transition: width 0.5s ease-in-out;
+    opacity: 1;
+    /* Always rendered */
+}
+
+.hdr-btn button:hover::after {
+    width: 100%;
+}
+
+.hdr-btn button:hover a {
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 6;
+    display: inline;
+
+}
+
+.hdr-3 {
+    display: none;
+}
+
+/* about-banner section stared */
+.abt-banner{
+    background-image: url("../img/about-banner.webp");
+    background-position:top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.abt-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.abt-head h1{
+    font-size: 55px;
+    color: white;
+    font-family: "Manrope", sans-serif;
+}
+/* about-banner section ended */
+
+
+/* about-trip section started */
+.trip-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    padding-top: 100px;
+
+}
+.trip-img{
+    width: 50%;
+    object-fit: cover; 
+    overflow: hidden;
+    object-fit: cover;
+}
+.trip-img img{
+    width: 100%;
+    border-radius: 10px; 
+}
+.trip-text{
+    width: 50%;
+}
+.trip-text h4{
+    font-family: "Montez", cursive;
+    font-size: 40px; 
+    color:var(--font-color);
+    font-weight: 400;
+}
+.trip-text h3{
+    font-family: "Manrope", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--font-color);
+    margin-bottom: 20px;
+}
+.trip-text p{
+    color: var(--para-color);
+    font-size: 18px;
+    font-weight: 400;
+    width: 80%;
+    margin-bottom: 30px;
+}
+.trip-route{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.trip-icon {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 105px;
+    height: 70px;
+    border-radius: 50px;
+   
+    background-color: var(--red-them-color);
+    color:white; 
+    transition: 0.4s; 
+}
+.trip-icon i{
+    transition: 0.4s; 
+    font-size: 28px;
+}
+.trip-icon:hover {
+    background-color: var(--font-color); 
+}
+.trip-icon:hover i{
+    transform: rotateY(180deg);
+}
+.route-icon h5{
+    color: var(--font-color);
+    font-size: 24px;
+    font-family: "Manrope", sans-serif;
+    margin-bottom: 10px;
+}
+.route-icon p{
+    width: 60%;
+    line-height: 1.7;
+}
+.abt-trip{
+    position: relative;
+    height: 800px;
+}
+.big-baloon{
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    width: 150px;
+    height: 150px;
+    animation: baloon 3s infinite  linear alternate;
+}
+#baloon2{
+    position: inherit;
+    bottom: 20px;
+    left: 20px;
+}
+#baloon-3{
+    position: inherit;
+    right: 0px;
+}
+@keyframes baloon {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(30px);
+    }
+}
+.boy{
+    position: absolute;
+    right: 150px;
+    bottom: 0px;
+    animation: boy 2s linear infinite alternate;
+}
+.boy::before{
+        content: "";
+        position: absolute;
+        left: -47%;
+        bottom: 17%;
+        width: 396px;
+        height: 396px;
+        border-radius: 50%;
+        background: #E9F6F9;
+        z-index: -1;
+}
+@keyframes boy {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(30px);
+    }
+}
+/* about-trip section ended */
+
+
+/* about-tour section started */
+.tour-parent h3{
+    font-family: "Manrope", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--font-color);
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 30px;
+}
+.tour-img{
+    display: flex;
+    position: relative;
+    height: 700px;
+    margin-top:60px;
+}
+.tour-img img{
+    /* border: solid blue; */
+    width: 33%;
+    /* height: 600px; */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+   
+}
+#tour-1{
+    position: absolute;
+    left:0;
+    z-index: -2;
+    /* border: solid blue; */
+}
+
+#tour-2{
+    position: absolute;
+    left:200px;
+    z-index: -1;
+}
+#tour-3{
+    background-image: url('../img/tour-2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    position: absolute;
+    left:400px;
+    z-index: 2;
+    width: 33%;
+    position: relative;
+    border-radius: 10px;
+    transition:1s;
+    overflow: hidden;
+    position: relative;
+}
+  
+  #tour-3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/tour-2.webp');
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s ;
+  }
+  
+  #tour-3:hover::before {
+    transform: scale(1.1);
+  }
+  
+#tour-4{
+    position: absolute;
+    right:200px;
+    z-index: -1;
+}
+#tour-5{
+    position: absolute;
+    right:0;
+    z-index: -2;
+}
+
+.tourx-small{
+    height: 500px;
+    margin: auto 0;
+    top: 100px;
+   
+}
+
+.tour-medium{
+    height: 600px;
+    top: 50px;
+}
+.tour-full{
+    height: 700px;
+    object-fit: cover;
+}
+.dil{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background: white;
+    color: rgba(194, 189, 189, 0.795);
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.kashmir{
+    /* border: solid blue; */
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    color:white;
+    font-family: "Manrope", sans-serif;
+    padding-left: 20px;
+}
+#location{
+    font-size: 15px;
+    font-weight: 500;
+}
+.kashmir h5{
+    font-size: 20px;
+    padding: 15px 0px;
+}
+
+/* about-tour  section ended*/
+
+
+
+
+/* about-comment section stared */
+.coment-head{
+    margin: 100px 0 50px 0;
+    text-align: center;
+}
+.coment-head h4{
+    font-family: "Montez", cursive;
+    font-size: 40px; 
+    color:var(--font-color);
+    font-weight: 400;
+}
+.coment-head h3{
+    font-family: "Manrope", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--font-color);
+    margin-bottom: 20px;
+}
+.comments{
+   
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 25px; */
+    position: relative;
+
+}
+.comment-3{
+    width: 30%;
+    border-radius: 25px;
+    padding: 30px;
+    background-color: var(--bg-color-light);
+    position: relative;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.img-name{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.com-head h4{
+    font-size: 24px;
+    font-family: "Manrope", sans-serif;
+    color: var(--font-color);
+}
+.com-head h6{
+    font-size: 16px;
+    color: var(--para-color);
+    font-weight: 500;
+}
+.star i{
+    color: #FFA944;
+}
+.com-para h3{
+    width: 95%;
+    font-size: 21px;
+    line-height: 1.7;
+    font-weight: 500;
+    padding: 40px 0px;
+}
+.coma{
+    position: absolute;
+    left: 42%;
+    bottom: -35px;
+    width: 90px;
+    height: 90px;
+    border-radius:50px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#position-abso{
+    position: relative;
+    bottom: 60px;
+}
+#red-bg{
+    background-color: var(--red-them-color);
+}
+/* about-comment section ended */
+
+
+.ftr-social-media-icon a {
+    background-color: rgb(239, 245, 254);
+    color: #E40505;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+}
+
+.ftr-social-media-icon a:hover {
+    color: rgb(239, 245, 254);
+    background-color: #E40505;
+}
+
+.ftr-company-intro>p {
+    font-size: 17px;
+}
+
+.Quick-Links ul li a {
+    font-size: 18px;
+    color: rgb(142, 141, 141);
+    font-weight: 400;
+}
+
+.Quick-Links ul li:hover a {
+    color: red;
+}
+
+.get-in-touch i {
+    font-size: 20px;
+    background-color: #e4f3fc;
+    color: #5dc2fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.get-in-touch a {
+    font-size: 18px;
+    color: rgb(142, 141, 141);
+    font-weight: 400
+}
+
+.get-in-touch a:hover {
+    color: #E40505;
+}
+
+.instagram-post iframe {
+    height: 200px;
+}
+
+.copyright {
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #E40505;
+    color: white;
+}
+@media (max-width:481px) {
+    .container{
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .abt-banner{
+        background-image: url("../img/about-banner.webp");
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        margin-top:100px;
+    }
+    .abt-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+    }
+    .abt-head h1{
+        font-size: 30px;
+        color: white;
+        font-family: "Manrope", sans-serif;
+    }
+    
+    /* about-trip section started */
+    .trip-main{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+    .trip-img{
+        display: none;
+        width: 50%;
+        object-fit: cover; 
+        overflow: hidden;
+        object-fit: cover;
+    }
+    .trip-text{
+        width: 100%;
+    }
+    .trip-text h4{
+        font-family: "Montez", cursive;
+        font-size: 23px; 
+        color:var(--font-color);
+        font-weight: 400;
+    }
+    .trip-text h3{
+        font-family: "Manrope", sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        color: var(--font-color);
+        margin-bottom: 10px;
+    }
+    .trip-text p{
+        color: var(--para-color);
+        font-size: 13px;
+        font-weight: 400;
+        width: 95%;
+        margin-bottom: 30px;
+    }
+    .trip-icon {  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: var(--red-them-color);
+        color:white; 
+        transition: 0.4s; 
+    }
+    .trip-icon i{
+        transition: 0.4s; 
+        font-size: 20px;
+    }
+    .route-icon h5{
+        color: var(--font-color);
+        font-size: 16px;
+        font-family: "Manrope", sans-serif;
+        margin-bottom: 5px;
+    }
+    .route-icon p{
+        width: 70%;
+        line-height: 1.2;
+    }
+    .abt-trip{
+        position: relative;
+        height: 450px;
+    }
+    .big-baloon{
+        display: none;
+    }
+    .boy{
+        display: none;
+    }
+    .tour-parent h3{
+        font-family: "Manrope", sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        color: var(--font-color);
+        margin-bottom: 20px;
+        text-align: center;
+        padding-top: 0px;
+    }
+    .tour-img{
+        display: flex;
+        position: relative;
+        height: 500px;
+        margin-top:60px;
+    }
+    #tour-3{
+        background-image: url('../img/tour-2.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        position: absolute;
+        left:0px;
+        z-index: 2;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 10px;
+        transition:1s;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .tour-full{
+        height: 500px;
+        object-fit: cover;
+    }
+    .tourx-small{
+    display: none;
+    height: 500px;
+    margin: auto 0;
+    top: 100px;
+    }
+
+    .tour-medium{
+    display: none;
+    height: 600px;
+    top: 50px;
+    }
+    /* about-comment section stared */
+    .coment-head{
+        margin: 70px 0 50px 0;
+        text-align: center;
+    }
+    .coment-head h4{
+        font-family: "Montez", cursive;
+        font-size: 28px; 
+        color:var(--font-color);
+        font-weight: 400;
+    }
+    .coment-head h3{
+        font-family: "Manrope", sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--font-color);
+        margin-bottom: 0px;
+    }
+.comments{
+    padding-top: 0px;
+    display: block;
+    position: relative;
+
+}
+.comment-3{
+    width: 100%;
+    border-radius: 25px;
+    padding: 30px 20px;
+    margin-bottom: 70px;
+    background-color: var(--bg-color-light);
+    position: relative;
+}
+#position-abso{
+    position: static;
+    top: 0;
+    left: 645px;
+    
+}
+#red-bg{
+    background-color: var(--red-them-color);
+    bottom: 340px;
+}
+.com-head h4{
+    font-size: 15px;
+    font-family: "Manrope", sans-serif;
+    color: var(--font-color);
+}
+.com-head h6{
+    font-size: 12px;
+    color: var(--para-color);
+    font-weight: 500;
+}
+.star i{
+    color: #FFA944;
+    font-size: 12px;
+}
+.com-para h3{
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 500;
+    padding: 40px 0px;
+}
+}
