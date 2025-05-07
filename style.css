@@ -1379,7 +1379,9 @@ span {
 
     .testimonial-1 {
         width: 100%;
-        border: 1px solid red;
         margin-left: 25px !important;
+    }
+    .testimonial-1-a>h2 {
+        bottom: -55px;
     }
 }
