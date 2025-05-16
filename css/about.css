@@ -400,91 +400,38 @@ header {
 
 
 
-/* about-comment section stared */
-.coment-head{
-    margin: 100px 0 50px 0;
-    text-align: center;
+/* testimonial section started */   
+.testimonial-1 {
+    background-color: #ebf5fd;
 }
-.coment-head h4{
-    font-family: "Montez", cursive;
-    font-size: 40px; 
-    color:var(--font-color);
-    font-weight: 400;
-}
-.coment-head h3{
-    font-family: "Manrope", sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    color: var(--font-color);
-    margin-bottom: 20px;
-}
-.comments{
-   
-    padding-top: 100px;
-    display: flex;
-    justify-content: space-between;
-    /* gap: 25px; */
-    position: relative;
 
-}
-.comment-3{
-    width: 30%;
-    border-radius: 25px;
-    padding: 30px;
-    background-color: var(--bg-color-light);
+.testimonial-1>h2 {
     position: relative;
+    bottom: -65px;
+    left: 41%;
+    text-align: center;
+    background-color: white;
+    color: #5dc2fd;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 15px;
+    font-weight: 400;
+    font-size: 30px;
 }
-.details{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   
+
+.testimonial-1>p {
+    font-weight: 400;
+    font-size: 18px;
 }
-.img-name{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+
+.testimonial-1-a>h2 {
+    background-color: #E40505;
+    bottom: -55px;
+    left: 43%;
+    color: white;
 }
-.com-head h4{
-    font-size: 24px;
-    font-family: "Manrope", sans-serif;
-    color: var(--font-color);
-}
-.com-head h6{
-    font-size: 16px;
-    color: var(--para-color);
-    font-weight: 500;
-}
-.star i{
-    color: #FFA944;
-}
-.com-para h3{
-    width: 95%;
-    font-size: 21px;
-    line-height: 1.7;
-    font-weight: 500;
-    padding: 40px 0px;
-}
-.coma{
-    position: absolute;
-    left: 42%;
-    bottom: -35px;
-    width: 90px;
-    height: 90px;
-    border-radius:50px;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#position-abso{
-    position: relative;
-    bottom: 60px;
-}
-#red-bg{
-    background-color: var(--red-them-color);
-}
-/* about-comment section ended */
+
+/* testimonial section ended */
 
 
 .ftr-social-media-icon a {
