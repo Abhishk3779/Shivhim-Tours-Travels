@@ -115,7 +115,7 @@ header {
 
 /* herosection css start */
 .herobanner {
-    background: url("/img/Frame-1-scaled.webp");
+    background: url("img/Frame-1-scaled.webp");
     background-size: cover;
     height: 750px;
     z-index: 1;
